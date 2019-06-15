@@ -1,0 +1,199 @@
+*{margin: 0;padding: 0;}
+html{ font-family: "Microsoft YaHei"; color:#333; font-size:100px;}
+html,body{width:100%;min-width:7.5rem;height:100%;background: #f4f4f4;}
+li{ list-style:none; }
+a{ text-decoration:none; color:#333; }
+a img{ border:0; }
+img{ vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix{ *zoom:1; }
+.clearfix:after{ content:""; display:block; clear:both; }
+.fl{float: left}
+.fr{float: right}
+input {/*-webkit-appearance:none;*/outline: none}
+.main{width: 7.5rem; margin: 0 auto;}
+.zg-wrap{
+        width: 7.5rem;
+        padding-top: .88rem;
+        padding-left: .2rem;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: url(../images/body.jpg) no-repeat center;
+        -webkit-background-size: cover;
+        background-size: cover;
+         box-sizing:border-box;
+        /*display: flex;*/
+}
+.content h1{
+  height: .83rem;
+  background: url(../images/title.png) no-repeat center;
+  -webkit-background-size: 5.29rem;
+  background-size: 5.29rem;
+}
+.content .books{
+  margin-top: .4rem;
+}
+.content .books .xc{
+   height: 3.37rem;
+  background: url(../images/cx_img.png) no-repeat center;
+  -webkit-background-size: 6.87rem;
+  background-size: 6.87rem;
+  padding-top: 2.4rem;
+  padding-left: .68rem;
+      box-sizing:border-box;
+
+}
+.content .books .xc a{
+      display: block;
+      width: 1.57rem;
+      height: .42rem;
+      font:400 .2rem/.42rem 'Microsoft YaHei';
+      color: #dd0011;
+      text-align: center;
+      background: #f2c752;
+      border-radius: .1rem;
+     
+}
+.content .books .sl{
+    height: 3.37rem;
+  background: url(../images/sl_img.png) no-repeat center;
+  -webkit-background-size: 6.87rem;
+  background-size: 6.87rem;
+  padding-top: 2.4rem;
+  padding-left: .68rem;
+      box-sizing:border-box;
+}
+.content .books .sl a{
+  display: block;
+  width: 1.57rem;
+  height: .42rem;
+  font:400 .2rem/.42rem 'Microsoft YaHei';
+  color: #474595;
+  text-align: center;
+  background: #f1c450;
+  border-radius: .1rem;
+}
+ .tab_bar{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  height: 1.16rem;
+} 
+.tab_bar a{
+  flex: 1;
+  height: 1.16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding-top: .1rem;
+  padding-bottom: .08rem;
+  box-sizing:border-box;
+  /*border:1px solid black;*/
+} 
+.tab_bar a.on{
+  background: #f95b1c;
+}
+.tab_bar a.on:nth-child(1) i{
+  background: url(../images/icon1.png) no-repeat center;
+  -webkit-background-size: .44rem;
+  background-size: .44rem;
+}
+.tab_bar a.on:nth-child(2) i{
+    width: .36rem;
+  height: .32rem;
+  background: url(../images/icon2.png) no-repeat center;
+  -webkit-background-size: .36rem;
+  background-size: .36rem;
+}
+.tab_bar a.on:nth-child(3) i{
+  width: .32rem;
+  height: .32rem;
+  background: url(../images/icon3.png) no-repeat center;
+  -webkit-background-size: .32rem;
+  background-size: .32rem;
+}
+.tab_bar a.on:nth-child(4) i{
+   width: .25rem;
+  height: .30rem;
+  background: url(../images/icon4.png) no-repeat center;
+  -webkit-background-size: .25rem;
+  background-size: .25rem;
+}
+.tab_bar a.on p{
+  color: #fff;
+}
+.tab_bar a:nth-child(1) i{
+  width: .44rem;
+  height: .38rem;
+  background: url(../images/icon1.png) no-repeat center;
+  -webkit-background-size: .44rem;
+  background-size: .44rem;
+}
+.tab_bar a:nth-child(2) i{
+  width: .36rem;
+  height: .32rem;
+  background: url(../images/icon2_r.png) no-repeat center;
+  -webkit-background-size: .36rem;
+  background-size: .36rem;
+}
+.tab_bar a:nth-child(3) i{
+  width: .32rem;
+  height: .32rem;
+  background: url(../images/icon3_r.png) no-repeat center;
+  -webkit-background-size: .32rem;
+  background-size: .32rem;
+}
+.tab_bar a:nth-child(4) i{
+  width: .25rem;
+  height: .30rem;
+  background: url(../images/icon4_r.png) no-repeat center;
+  -webkit-background-size: .25rem;
+  background-size: .25rem;
+}
+.tab_bar a p{
+  font:600 .2rem/.2rem 'Microsoft YaHei';
+  color: #f95b1c;
+  text-align: center;
+}
+/*刷题计划 弹窗*/
+.mask{
+  position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background:rgba(0,0,0,0.6);
+        z-index: 99;
+        display: none;
+}
+.code {
+      width: 2.01rem;
+      height: 2.01rem;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 100;
+      display: none;
+}
+.code span{
+  width: .26rem;
+  height: .26rem;
+  position: absolute;
+  right: -.26rem;
+  top: -.26rem;
+  background: url(../images/close.png) no-repeat center;
+  -webkit-background-size: .26rem;
+  background-size: .26rem;
+}
+.code img{
+  width: 100%;
+}
